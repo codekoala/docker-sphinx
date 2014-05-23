@@ -2,9 +2,9 @@ FROM codekoala/arch
 MAINTAINER Josh VanderLinden <codekoala@gmail.com>
 
 RUN pacman -Syu --needed --noconfirm \
-    python2-sphinx \
-    python2-sphinx_rtd_theme \
-    sphinxcontrib2-programoutput \
+    python-sphinx \
+    python-sphinx_rtd_theme \
+    sphinxcontrib-programoutput \
     make && \
     rm -rf /var/cache/pacman
 
